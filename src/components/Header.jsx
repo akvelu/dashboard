@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
@@ -13,16 +13,16 @@ function Header() {
           <div class="d-grid gap-4 mx-auto button-con">
             <button class="btn btn-outline-dark" 
            data-bs-toggle="button" autocomplete="off" aria-pressed="true" type="button">
-              Dashboard
+            <Link className="lnk" to='/dashboard'>Dashboard</Link> 
             </button>
             <button class="btn btn-outline-dark" data-bs-toggle="button" autocomplete="off" aria-pressed="true" type="button">
-              Master list
+            <Link className="lnk" to='/masterlist'>Master list</Link>
             </button>
             <button class="btn btn-outline-dark" data-bs-toggle="button" autocomplete="off" aria-pressed="true" type="button">
-              Invities
+            <Link className="lnk" to='/invities'>Invities</Link>
             </button>
             <button class="btn btn-outline-dark" data-bs-toggle="button" autocomplete="off" aria-pressed="true" type="button">
-              Connections
+            Connections
             </button>
             <button class="btn btn-outline-dark" data-bs-toggle="button" autocomplete="off" aria-pressed="true" type="button">
               Candidates
